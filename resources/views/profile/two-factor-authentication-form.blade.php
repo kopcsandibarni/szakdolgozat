@@ -1,22 +1,22 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Two Factor Authentication') }}
+        {{ __('Kétfaktoros autentikáció') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Add additional security to your account using two factor authentication.') }}
+        {{ __('Adj a fiókodhoz egy biztonsági fokot a kétfaktoros autentikáció segítségével.') }}
     </x-slot>
 
     <x-slot name="content">
         <h3 class="text-lg font-medium text-gray-900">
             @if ($this->enabled)
                 @if ($showingConfirmation)
-                    {{ __('Finish enabling two factor authentication.') }}
+                    {{ __('Fejezd be a kétfaktoros autentikáció folyamatát.') }}
                 @else
-                    {{ __('You have enabled two factor authentication.') }}
+                    {{ __('Befejezted a kétfaktoros autentikáció beállítását.') }}
                 @endif
             @else
-                {{ __('You have not enabled two factor authentication.') }}
+                {{ __('Nem engedélyezted a kétfaktoros autentikációt.') }}
             @endif
         </h3>
 
